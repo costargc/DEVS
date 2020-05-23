@@ -51,6 +51,9 @@ Quando você clica em `tab` você autocompleta com base nos nomes disponíveis.
 
 `cp [arquivo1] [arquivo2]`
 
+#### Mover Arquivo
+
+`mv [arquivo1] [Diretório]`
 
 
 ### Obrir programas

@@ -10,6 +10,6 @@
 
 4. Delete o arquivo original da pasta `pasta01`.
 
-5. Para finalizer deleve a `pasta01` e a `pasta02`.
+5. Para finalizar deletar a `pasta01` e a `pasta02`.
 
 [10 min]

@@ -1,0 +1,23 @@
+
+
+#caixa{
+background: blue;
+color: white;
+border-style: solid;
+border-color: black;
+
+width: 400px;
+height: 440px;
+margin: 10px 30px 20px 50px;
+padding: 25px 10px 30px 20px;
+
+border-width: 22px;
+
+display: flex;
+align-items: center;
+}
+
+#texto{
+    text-align: center;
+    margin: auto;
+}

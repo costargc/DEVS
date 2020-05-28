@@ -1,0 +1,17 @@
+.container{
+    width: 400px;
+}
+
+#block{
+border-style: solid;
+border-color: black;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#inline{
+    border-style: solid;
+    border-color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

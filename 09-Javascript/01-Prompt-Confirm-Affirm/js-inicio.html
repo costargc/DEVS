@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Data Types, User Input, Conditional Logic
+  </title>
+</head>
+
+<body>
+
+  <h1>Esta página tem javascript</h1>
+
+  <script type="text/javascript">
+
+    var minhaIdade = 34;
+
+    var meuNome = prompt("Qual é o seu nome?");
+    var confirmGato = confirm("Você prefere mais gatos do que cachorro?");
+
+
+    if (confirmGato) {
+      alert("Eu Sabia que você gostava de Gato.");
+    }
+    else {
+      alert("Você tem cara mesmo de gostar mais de cachorro");
+    }
+    // o comando document.write() sobrescreve toda a página.Não usamos isto no dia a dia... mas só pra saber que existe.
+    document.write("Bem vindo a página " + meuNome + ". Você tem " + minhaIdade + " anos");
+
+
+  </script>
+</body>
+
+</html>

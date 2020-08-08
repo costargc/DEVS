@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        
+        // var meunome = "Rodrigo";
+        // isto é um comentário
+        var meunome = prompt("Qual é o seu nome?");
+        var anoNascimento = prompt("Qual ano de nascimento?");
+        var sobrenome = prompt("Qual é o seu sobrenome?");
+        var idade = 2020 - anoNascimento;
+        var alunocheck = confirm("você é um aluno?"); // var alunocheck = true;
+        var nomeCompleto = meunome + " " + sobrenome;
+        var idadecheck = (idade > 18);
+        var pessoas = ["Rodrigo","Juan","Afonso","Felipe"];
+
+        alert("é maior de 18: " + idadecheck);
+
+        console.log(nomeCompleto);    
+        document.write(nomeCompleto);
+
+
+    </script>
+
+</body>
+
+</html>

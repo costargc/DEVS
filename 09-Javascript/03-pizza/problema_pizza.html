@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // pizza de 40 reais
+        // perguntar para o usuário quantas ele quer comprar.
+        // calcular o valor total
+        // adicionar no valor total um imposto de 10% valorfinal = valor*(1+10%);
+        // mostrar na tela o valor final que o usuário tem que pagar (pode ser alert ou document.write)
+
+        // definição da variável
+        var valorunidade = 40;
+        var imposto = 0.07;
+        var quantidade;
+        var valortotal;
+        var valorimposto;
+        var valorfinal;
+        var valorfinalformatado;
+
+        // regras
+        quantidade = prompt("Quantas pizzas você quer?");
+        valortotal = valorunidade * quantidade;
+        valorimposto = valortotal * imposto;
+        valorfinal = valortotal + valorimposto;
+        valorfinalformatado = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorfinal);
+
+        // mostrando na pagina
+        document.write("<h1>" + "Você pediu: " + quantidade + " pizzas");
+        document.write("<br>");
+        document.write("Você tem que pagar: " + valorfinalformatado + "</h1>");
+
+        console.log(valorfinal);
+
+
+
+    </script>
+</body>
+
+</html>

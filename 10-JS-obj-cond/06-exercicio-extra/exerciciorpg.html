@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var Nome;
+        var Armadura;
+        var Forca;
+        var Inteligencia;
+        var Vitalidade;
+        var Sorte;
+        var HP;
+        var CRIT;
+
+        juan = {
+            Nome: "Saint 14",
+            Armadura: 9,
+            Forca: 7,
+            Inteligencia: 3,
+            Vitalidade: 5,
+            Sorte: 1,
+            HP: 26, // vitalidade*2+forca+armadura
+            CRIT: 15 // force*2+sorte
+        }
+
+        felipe = {
+            Nome: "Geralt of Rivia",
+            Armadura: 3,
+            Forca: 6,
+            Inteligencia: 5,
+            Vitalidade: 5,
+            Sorte: 6,
+            HP: 19, // vitalidade*2+forca+armadura
+            CRIT: 18 // force*2+sorte
+        }
+
+        marianinha = {
+            Nome: "Tigre",
+            Armadura: 3,
+            Forca: 6,
+            Inteligencia: 10,
+            Vitalidade: 4,
+            Sorte: 2,
+            HP: 17, // vitalidade*2+forca+armadura
+            CRIT: 14 // force*2+sorte
+        }
+
+
+        // jogo
+
+        // passo 1: sortear 2 jogadores
+        num1 = Math.floor(Math.random() * 3);
+        num2 = Math.floor(Math.random() * 3);
+
+        console.log(num1, num2);
+
+        jogadores = [juan, felipe, marianinha];
+
+        console.log(jogadores[num1], jogadores[num2]);
+
+        // sortear quem vai atacar:
+        // num1 sempre ataca e num2 sempre defende
+
+        // tirar o CRIT do atacante do HP do defensor.
+        jogadores[num2].HP = jogadores[num2].HP - jogadores[num1].CRIT
+
+        console.log(jogadores[num1], jogadores[num2]);
+
+
+    </script>
+
+
+</body>
+
+</html>
